@@ -1,0 +1,25 @@
+[[document]]
+id = "RM0016"
+title = "STM8S Series and STM8AF Series 8-bit microcontrollers"
+publisher = "STMicroelectronics"
+revision = "14"
+published = "2017-10"
+url = "https://www.st.com/resource/en/reference_manual/cd00190271.pdf"
+accessed = "2026-11-02"
+local_filename = "cd00190271.pdf"
+sha256 = ""
+redistribution_permitted = false
+terms_url = "https://www.st.com/content/st_com/en/about/terms-of-use.html"
+
+[[document]]
+id = "PM0044"
+title = "STM8 CPU programming manual"
+publisher = "STMicroelectronics"
+revision = "3"
+published = "2011-09"
+url = "https://www.st.com/resource/en/programming_manual/cd00161709.pdf"
+accessed = "2026-11-02"
+local_filename = "cd00161709.pdf"
+sha256 = ""
+redistribution_permitted = false
+terms_url = "https://www.st.com/content/st_com/en/about/terms-of-use.html"
