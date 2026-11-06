@@ -54,6 +54,7 @@ A failed experiment may produce a useful feasibility result, but it does not cou
 
 - [Feasibility, architecture, and validation roadmap](docs/roadmap/Rust_for_STM8_SDCC_Feasibility_and_Roadmap_v1.0.md) — technical requirements and decision gates.
 - [Project management and contribution workflow](docs/PROJECT_MANAGEMENT.md) — issue structure, review policy, and definition of done.
+- [Agent instructions](AGENTS.md) — mandatory architecture, validation, documentation, and completion rules for coding agents.
 - [Documentation policy](docs/DOCUMENTATION.md) — document organization, stable filenames, internal linking, and revision conventions.
 - [Vendor reference documents](docs/references/README.md) — external hardware manuals and local-copy verification.
 - [Third-party notices](THIRD_PARTY.md) — ownership, licensing, and redistribution policy for external materials.
