@@ -1,0 +1,156 @@
+# =============================================================================
+# stm8-rs — Git ignore rules
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Rust / Cargo
+# -----------------------------------------------------------------------------
+/target/
+**/*.rs.bk
+
+# Keep Cargo.lock for reproducible toolchain builds.
+# Do NOT ignore Cargo.lock.
+
+# -----------------------------------------------------------------------------
+# Compiler / SDCC generated artifacts
+# -----------------------------------------------------------------------------
+*.o
+*.obj
+*.rel
+*.lib
+*.a
+*.lst
+*.rst
+*.map
+*.sym
+*.asm
+*.adb
+*.cdb
+*.lk
+*.mem
+*.noi
+*.ihx
+*.hex
+*.bin
+*.elf
+*.s19
+*.srec
+
+# Generated intermediate representations and diagnostics
+*.mir
+*.ll
+*.bc
+*.dmp
+*.dot
+
+# -----------------------------------------------------------------------------
+# Local build and experiment directories
+# -----------------------------------------------------------------------------
+/build/
+/dist/
+/out/
+/tmp/
+/.cache/
+/scratch/
+
+# Locally generated test and benchmark runs
+/artifacts/local/
+/results/local/
+/benchmarks/results/local/
+
+# -----------------------------------------------------------------------------
+# Vendor reference documentation
+# -----------------------------------------------------------------------------
+# Original ST documentation is not redistributed.
+/docs/references/vendor/
+
+# Preserve:
+# docs/references/manifest.toml
+# docs/references/README.md
+
+# -----------------------------------------------------------------------------
+# Local document working copies
+# -----------------------------------------------------------------------------
+# Editable source drafts kept only on the authoring machine.
+/docs/roadmap/_history/
+
+# -----------------------------------------------------------------------------
+# Python tooling
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# -----------------------------------------------------------------------------
+# Editors / IDEs
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# -----------------------------------------------------------------------------
+# Operating system / local files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.directory
+
+# -----------------------------------------------------------------------------
+# Logs and temporary files
+# -----------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# -----------------------------------------------------------------------------
+# Local environment and credentials
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Ignore rules are not a security boundary. Keep credentials and proprietary
+# files outside the repository whenever possible.
+
+# -----------------------------------------------------------------------------
+# Local hardware configuration
+# -----------------------------------------------------------------------------
+# Board-specific local overrides and debugger settings.
+/config/local/
+/hardware/local/
+/.openocd/
+
+# -----------------------------------------------------------------------------
+# Coverage / profiling
+# -----------------------------------------------------------------------------
+/coverage/
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# -----------------------------------------------------------------------------
+# Reviewed regression fixtures
+# -----------------------------------------------------------------------------
+# Temporary compiler output remains excluded. Stable expected-output fixtures
+# in this directory are selected, reviewed, and intentionally version-controlled.
+!/tests/fixtures/expected/**
